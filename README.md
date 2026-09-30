@@ -7,6 +7,10 @@
 This is a smaller, separate project that keeps only the browser-profile flow.
 It does not use the cookie-based path.
 
+## Demo
+
+![Croc GPT API Demo](demo.gif)
+
 ## What it includes
 
 - `manual_login.py` to create and save a persistent ChatGPT browser profile
