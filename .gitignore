@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+chatgpt_profile/
+profile_config.txt
+.pytest_cache/
+.DS_Store
