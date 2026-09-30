@@ -7,6 +7,11 @@
 This is a smaller, separate project that keeps only the browser-profile flow.
 It does not use the cookie-based path.
 
+CROC-GPT-API acts as a bridge between your authenticated browser session and your AI coding agent. It exposes an OpenAI-compatible endpoint so you can use it for connection to Claude Code, Hermes, etc. by choosing a custom endpoint as your coding agent.
+
+- **Zero Cost**: Uses your existing web subscription credits.
+- **Session Preservation**: Keeps your web session alive via cookie management.
+
 
 ![Croc GPT API Demo](demo.gif)
 
@@ -33,12 +38,31 @@ playwright install chromium
 python3 manual_login.py
 ```
 
-Log in to ChatGPT in the browser window, then press Enter in the terminal.
+- Wait for the chromium browser to automatically open.
+- Log in to ChatGPT in the opened chromium browser using email or password/social-login.
+- Then press Enter in the terminal.
 
 ## Start the API
 
 ```bash
 python3 server.py
+```
+
+an end point will be running on `http://[IP_ADDRESS]/` and also an opneapi complatible endpoint.
+use the end point to connect with claude code or any other tool or agent that supports openai compatible end points.𓆌
+
+
+## Addon
+
+
+```bash
+curl --request POST \
+  --url http://[IP_ADDRESS]/chat \
+  --header 'accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"prompt": "write a fastapi server for a webapp "
+}'
 ```
 
 ## Test it
@@ -49,6 +73,7 @@ python3 test_client.py
 
 ## Endpoints
 
-- `POST /chat` with `{ "prompt": "Hello" }`
+- `POST /chat` with `{ "prompt": "Hello 𓆌" }`
 - `POST /new-chat`
 - `GET /health`
+
