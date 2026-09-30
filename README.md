@@ -48,8 +48,8 @@ python3 manual_login.py
 python3 server.py
 ```
 
-an end point will be running on `http://[IP_ADDRESS]/` and also an opneapi complatible endpoint.
-use the end point to connect with claude code or any other tool or agent that supports openai compatible end points.𓆌
+an  openai complatible endpoint will be running on `http://[IP_ADDRESS]/` .
+use the end point to connect with claude code, Hermes , VS code  or any other tool/agent that supports openai compatible end points.𓆌
 
 
 ## Addon
