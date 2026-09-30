@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="Croc GPT API Logo" width="200"/>
+</p>
+
 # Croc GPT API
 
 This is a smaller, separate project that keeps only the browser-profile flow.
