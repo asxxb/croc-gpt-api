@@ -1,13 +1,13 @@
-<p align="center">
+<!-- <p align="center">
   <img src="logo.png" alt="Croc GPT API Logo" width="200"/>
-</p>
+</p> -->
 
 # Croc GPT API
 
 This is a smaller, separate project that keeps only the browser-profile flow.
 It does not use the cookie-based path.
 
-## Demo
+## crocGptApi
 
 ![Croc GPT API Demo](demo.gif)
 
